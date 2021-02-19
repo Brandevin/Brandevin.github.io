@@ -1,8 +1,6 @@
 #This description must be updated later. Second description
 #Possibly fixing a bug
 
-WORLD
-Hello there
 
 Massively by HTML5 UP
 html5up.net | @ajlkn
