@@ -78,6 +78,20 @@ input, select, textarea {
    -moz-user-select: none; /* Firefox */
    -ms-user-select: none; /* Internet Explorer/Edge */
 }
+div.square {
+	background: #000;
+	color:#ffffff;
+	appearance: none;
+	display: inline-block;
+	font-weight: 900;
+	letter-spacing: 0.075em;
+	height: 2rem;
+	line-height: 2rem;
+	padding: 0 0.5rem;
+	text-align: center;
+	text-decoration: none;
+	white-space: nowrap;
+  }
 /* Basic */
 
 	@-ms-viewport {
@@ -183,7 +197,7 @@ input, select, textarea {
 
 	p {
 		text-align: justify;
-		margin: 0 0 2rem 0;
+		margin: 0 0 1rem 0;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -309,11 +323,11 @@ input, select, textarea {
 		}
 
 	strong, b {
-		color: #212931;
+		color:#212931
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #212931;
+		color:#212931
 	}
 
 	blockquote {
@@ -3008,6 +3022,7 @@ input, select, textarea {
 	header.major .date:before, header.major .date:after {
 		border-top-color: #eeeeee;
 	}
+/* Hover */
 
 /* Table */
 
@@ -3633,7 +3648,7 @@ input, select, textarea {
 		position: relative;
 		width: calc(100% - 4rem);
 		max-width: 72rem;
-		z-index: 2;
+		z-index: 2
 	}
 
 		#nav ul.divided li {
@@ -3790,6 +3805,13 @@ input, select, textarea {
 		#main > .post {
 			padding: 8rem 8rem 6rem 8rem ;
 		}
+			#main > .post > .icons {
+				text-align:left;
+				background-color: rgb(255, 255, 255);
+			}
+			#main section.post ul.icons li a.hover-item b:hover{
+								color:#18bfef !important;
+			}
 
 			#main > .post header.major > .date {
 				margin-top: -2rem;
@@ -3804,7 +3826,6 @@ input, select, textarea {
 			#main > .post.featured {
 				text-align: center;
 			}
-
 			@media screen and (max-width: 1280px) {
 
 				#main > .post {
@@ -3844,10 +3865,12 @@ input, select, textarea {
 			-moz-align-items: -moz-stretch;
 			-webkit-align-items: -webkit-stretch;
 			-ms-align-items: -ms-stretch;
-			align-items: stretch;
+			align-items: flex;
 			text-align: center;
+			vertical-align: bottom;
 			width: 100%;
 			padding: 0;
+			flex-flow: wrap
 		}
 
 			#main > .posts > * {
