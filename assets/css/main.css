@@ -322,7 +322,7 @@ div.square {
 			color: #18bfef !important;
 		}
 
-	strong, b {
+	strong, {
 		color:#212931
 	}
 
@@ -3809,7 +3809,7 @@ div.square {
 				text-align:left;
 				background-color: rgb(255, 255, 255);
 			}
-			#main section.post ul.icons li a.hover-item b:hover{
+			#main section.post ul.icons li a.hover-item:hover{
 								color:#18bfef !important;
 			}
 
