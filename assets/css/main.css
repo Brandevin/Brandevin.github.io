@@ -456,7 +456,7 @@ input, select, textarea {
 		}
 
 		.row > .col-12 {
-			width: 100%;
+			width: 100%
 		}
 
 		.row > .off-12 {
@@ -2227,6 +2227,8 @@ input, select, textarea {
 			background-color: #212931;
 			box-shadow: none;
 			color: #ffffff !important;
+			vertical-align: bottom;
+
 		}
 
 			input[type="submit"].primary:hover,
@@ -3285,7 +3287,7 @@ input, select, textarea {
 
 	#intro {
 		color: #ffffff;
-		padding: 8rem 4rem 6rem 4rem ;
+		padding: 8rem 4rem 12rem 4rem ;
 		-moz-align-items: center;
 		-webkit-align-items: center;
 		-ms-align-items: center;
@@ -3310,7 +3312,7 @@ input, select, textarea {
 		cursor: default;
 		text-align: center;
 		z-index: 1;
-		min-height: 100vh;
+		min-height: 80vh;
 	}
 
 		#intro input, #intro select, #intro textarea {
