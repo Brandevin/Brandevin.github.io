@@ -1431,7 +1431,7 @@
       background-color: #fff;
 			top: 0;
 			left: 0;
-			width: 100%;
+			width: auto;
 			height: 100%;
 			background-color: #212931;
 			background-image: url("../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/background.jpg");
@@ -8664,18 +8664,20 @@
 
 
   <style type="text/css">
+
     .main-container {
       margin:10%;
       background-color: #FFFFFF;
-      padding-left:5%;
-      padding-right:5%;
+      padding-left:10%;
+      padding-right:10%;
       margin-top:100px;
-      padding-top:50px;
-      margin-bottom:50px;
-      padding-bottom:50px;
-      border-radius:50px;
-    }
-
+      padding-top:5%;
+      margin-bottom:5%;
+      padding-bottom:5%;
+      border-radius:50px; }
+      .main-container .equation {
+        overflow-x:scroll
+      }
     img {
       max-width: 100%;
     }
@@ -37874,7 +37876,7 @@ vif_lm_expl&lt;-vif(fit_lm_exploratory)</code></pre>
           equal to <strong>75.8 %</strong>.</p>
         <p>The multilinear regression uses the equation below. It calculates the parameters <em>a0</em> and <em>bi</em>
           that best reduce the square error between the regression and the real data.</p>
-        <p><span class="math display">\[
+        <p class="equation"><span class="math display">\[
             SalePrice =
             a_0+b_1*BsmtQual+b_2*ExterQual+b_3*FireplaceQu+b_4*GarageQual+b_5*HeatingQC+b_6*KitchenQual\\+b_7*LotArea+b_8*GarageArea+b_9*MasVnrArea+b_{10}*OpenPorchSF+b_{11}*X2ndFlrSF+b_{12}*TotalBsmtSF\\+b_{13}*BsmtUnfSF+b_{14}*WoodDeckSF
             \]</span></p>
