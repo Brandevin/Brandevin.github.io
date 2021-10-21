@@ -18250,12 +18250,14 @@ As all correlations were lower than 0.3, there does not seem to be any clear cor
 </ol>
 <h1 id="9.-Final-considerations-on-the-bias-of-the-data.">9. Final considerations on the bias of the data.<a class="anchor-link" href="#9.-Final-considerations-on-the-bias-of-the-data.">&#182;</a></h1><p>The above analysis may not be valid if the data is biased. Some possible sources of bias:</p>
 <ol>
-<li>Fund selection bias - It is not known the criteria dataroma.com uses in their selecion of the funds. Although there are hundreds of funds that file the 13F, only 72 were selected. Maybe these funds were the best performing during the periods analyzed (2013-2021), but this may not happen in the future. Furthermore, if the page decides to include more funds, some reconsideration must be done:</li>
+<li>Fund selection bias - It is not known the criteria dataroma.com uses in their selecion of the funds. Although there are hundreds of funds that file the 13F, only 72 were selected. Maybe these funds were the best performing during the periods analyzed (2013-2021), but this may not happen in the future. Furthermore, if the page decides to include more funds, some reconsideration must be done:
+  <ul>
+    <li>The model should be retrained and studied again based on this data.</li>
+    <li>The model should ignore the new funds and only consider the previously studied funds.</li>
+    </ul>
+</li>
 </ol>
-<ul>
-<li>The model should be retrained and studied again based on this data.</li>
-<li>The model should ignore the new funds and only consider the previously studied funds.</li>
-</ul>
+
 <ol>
 <li>Stock price selecion bias. As the analysis considered only stocks that had prices in yahoo-finance, some stocks were ignored. One such case is "BRK.B" (the name mentioned in dataroma), while in yahoofinance the ticker is "BRKB". Another is a ticker labeled "ABV-OLD" (Ambev S.A.) in dataroma, but has the ticker in yahoo finance equal to "ABEV". No string manipulation was done to try to fix all such cases, so the analysis is biased to only tickers available in yahoo finance that had the same ticker format in dataroma.</li>
 </ol>
