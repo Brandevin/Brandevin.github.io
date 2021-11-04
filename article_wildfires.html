@@ -1,0 +1,196 @@
+<!DOCTYPE HTML>
+<style>
+.click-zoom input[type=checkbox] {
+  display: none
+}
+
+.click-zoom img {
+  margin: 0px;
+  transition: transform 0.25s ease;
+  cursor: zoom-in
+}
+
+.click-zoom input[type=checkbox]:checked~img {
+  transform: scale(1.8);
+  cursor: zoom-out
+}
+  </style>
+
+<html>
+
+<head>
+	<title>Top investors buy/sell project page</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<a href="https://Brandevin.github.io/index.html" class="logo">&larr; Back to Main Page</a>
+		</header>
+		<!-- Nav -->
+		<nav id="nav">
+			<!--
+						<ul class="links">
+							<li><a href="index.html">&larr; Back to Main Page</a></li>
+							<li class="active"><a href="#">Project Page</a></li>
+						</ul>
+						-->
+			<ul class="icons">
+				<li><a href="https://www.linkedin.com/in/felipe-suzuki/" target='_blank'
+						class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+				<li><a href="https://github.com/Brandevin" target='_blank' class="icon brands fa-github"><span
+							class="label">GitHub</span></a></li>
+
+			</ul>
+		</nav>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Post -->
+			<section class="post">
+				<header class="major">
+					<span class="date">November 03, 2021</span>
+					<h1>Visualizing USA historical wildfires with Tableau Dashboard
+					</h1>
+				</header>
+			</section>
+			<div class='tableauPlaceholder' id='viz1635989150289' style='position: relative'><noscript><a href='#'><img
+							alt='Map dashboard '
+							src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;US&#47;US_WILDFIRES&#47;Mapdashboard&#47;1_rss.png'
+							style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+					<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+					<param name='embed_code_version' value='3' />
+					<param name='site_root' value='' />
+					<param name='name' value='US_WILDFIRES&#47;Mapdashboard' />
+					<param name='tabs' value='no' />
+					<param name='toolbar' value='yes' />
+					<param name='static_image'
+						value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;US&#47;US_WILDFIRES&#47;Mapdashboard&#47;1.png' />
+					<param name='animate_transition' value='yes' />
+					<param name='display_static_image' value='yes' />
+					<param name='display_spinner' value='yes' />
+					<param name='display_overlay' value='yes' />
+					<param name='display_count' value='yes' />
+					<param name='language' value='pt-BR' />
+					<param name='filter' value='publish=yes' />
+				</object></div>
+			<section class='post'>
+
+
+
+				<p>Wildfires are unplanned, unwanted or uncontrolled fires in areas of combustile vegetation. In the
+					United States, the national Fire Program Analysis (FPA) system is responsible for acquiring reports
+					from federal, state and local fire organizations. The maps below shows some of the most
+					fire-susceptible regions of the US as well as the National Forests of the United states.
+				</p>
+				<div class="image main">
+					<img src="wildfires_project/wildfire_potential2.jpg
+									" alt="" />
+					<p style="text-align: center;"><i>Wildland hazard potential (WHP) map produced by the USDA Forest
+							Service, Fire Modeling Institute. Uses estimates of burn probability and conditional
+							probabilities of fire intensity levels to build a Large Fire Simulator. The higher the WFP,
+							the higher the potential of a high-intensity fire.<sup><a
+									href="https://www.firelab.org/project/wildfire-hazard-potential">*</a></sup></i></p>
+				</div>
+				
+				<div class="image main click-zoom">
+					<label>
+						<input type="checkbox">
+
+					<img src="wildfires_project/USA_National_Forests_Map.jpg
+									" alt=""/>
+								</label>
+
+					<p style="text-align: center;"><i>USA National Forests Map.<sup><a
+									href="https://www.fs.usda.gov/visit/maps">*</a></sup></i></p>
+				</div>
+
+				<p>The data was acquired, processed, filtered and finally made available in <a
+						href='https://www.kaggle.com/rtatman/188-million-us-wildfires'>Kaggle</a> for everybody to
+					analyze. It contains 1.88 Million wildfire records registered between 1992 and 2015, representing a
+					total of 140 Million acres burned in the period.
+				</p>
+				<p>The data includes records of root cause, fire size, discovery and containment dates, owner of land,
+					name of the reporting unit.
+				</p>
+				<p> By creating a dashboard, where one can filter by fire size, fire cause and year of fire, one can
+					best understand the main fire causes, the regions most susceptible to fires, the behaviour over time, the main reporting
+					units in region and much more.
+				</p>
+				<p> The dashboard is shown above (as well as accessible through the buttom below) and is interactable:
+					One can filter the cause of fire, year of fire and fire size. One can also use the mouse to draw the
+					area of interest. The filtered region properties are then displayed in the three barplots below,
+					where one can understand the properties of the selection.
+				</p>
+				<p> By using the dashboard, one can quickly reach the following conclusions:
+				</p>
+
+				<ul class="alt">
+					<li>Lightings were the main cause of large fires. They occurred mainly in the region between the
+						Rocky Mountains and the pacific, as well as in Alaska;</li>
+					<li>Most railroad fires occurred in Florida;</li>
+					<li>The states of Iowa, Illionois, Indiana and Ohio presented a low number of fires. Most likely
+						because they are very agricultural regions.</li>
+					<li>There is a very high correlation between fire size and density of fires  the WHP map. This is expected, as the Large
+						Fire Simulator was built using this same database.</li>
+					<li>The majority os fires in Puerto Rico and Hawaii had no cause reported.</li>
+					<li>If one wants to better understand the fires that occurred in Idaho, one should contact Boise Distric, Twin Falls District, Idaho Falls Distric, Nez Perce - Clearwater National Forests, Salmon-Challis National Forest. On the other hand, if one wants to know more about Florida fires, one should contact the Florida Forest Service</li>
+					<li>The total area of fires seem to have increased in Kansas over time.</li>
+
+				</ul>
+
+
+				The dashboard is also available in the tableau website, in the link bellow
+
+				<header id="header" style='height:8rem;padding-bottom: 2rem'>
+					<a href="https://public.tableau.com/views/US_WILDFIRES/Mapdashboard?:language=pt-BR&publish=yes&:display_count=n&:origin=viz_share_link"
+						class="logo" target=_blank style='color:black;border-color:black'>
+						TABLEAU PUBLIC LINK</a>
+				</header>
+				<!--
+								<ul class="icons" style='text-align:center'>
+									<li><a href="https://github.com/Brandevin/Top_investor_analysis"  class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+									<li><a href="https://github.com/Brandevin/Top_investor_analysis" style='border: 0;' class='hover-item' target="_blank"><b>Project Repository</b></a></h2></li>
+									<li><a href="https://github.com/Brandevin/Top_investor_analysis/blob/main/analyze_past_buy_sells_v2.ipynb" target="_blank" style='border: 0;'><i class="brands fas fa-code"></i></li></a>
+									<li><a href="https://github.com/Brandevin/Top_investor_analysis/blob/main/analyze_past_buy_sells_v2.ipynb" target="_blank" style='border: 0;' class='hover-item'><b>Main Code</b></a></li>
+								</ul>-->
+			</section>
+		</div>
+
+		<div id="copyright">
+			<ul>
+				<li>Felipe Suzuki</li>
+				<li>felipe.courasuzuki@gmail.com.br</li>
+			</ul>
+		</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="https://kit.fontawesome.com/2a27917fb6.js" crossorigin="anonymous"></script>
+	<script
+		type='text/javascript'>                    var divElement = document.getElementById('viz1635989150289'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.minWidth = '1020px'; vizElement.style.maxWidth = '1420px'; vizElement.style.width = '100%'; vizElement.style.height = '1800px'; } else if (divElement.offsetWidth > 500) { vizElement.style.minWidth = '1020px'; vizElement.style.maxWidth = '1420px'; vizElement.style.width = '100%'; vizElement.style.height = '1800px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '1800px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
+		<script>
+
+			</script>
+</body>
+
+</html>
