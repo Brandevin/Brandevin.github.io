@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+<style>
+.click-zoom input[type=checkbox] {
+  display: none
+}
+
+.click-zoom img {
+  margin: 0px;
+  transition: transform 0.25s ease;
+  cursor: zoom-in
+}
+
+.click-zoom input[type=checkbox]:checked~img {
+  transform: scale(1.8);
+  cursor: zoom-out
+}
+  </style>
+
+<html>
+
+<head>
+	<title>Market Layout and Customer segmentation with clustering algorithms</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<a href="https://Brandevin.github.io/index.html" class="logo">&larr; Back to Main Page</a>
+		</header>
+		<!-- Nav -->
+		<nav id="nav">
+			<!--
+						<ul class="links">
+							<li><a href="index.html">&larr; Back to Main Page</a></li>
+							<li class="active"><a href="#">Project Page</a></li>
+						</ul>
+						-->
+			<ul class="icons">
+				<li><a href="https://www.linkedin.com/in/felipe-suzuki/" target='_blank'
+						class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+				<li><a href="https://github.com/Brandevin" target='_blank' class="icon brands fa-github"><span
+							class="label">GitHub</span></a></li>
+
+			</ul>
+		</nav>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Post -->
+			<section class="post">
+				<header class="major">
+					<span class="date">December 29, 2021</span>
+					<h1>Market Layout and Customer segmentation with clustering algorithms
+					</h1>
+				</header>
+			</section>
+
+			<section class='post'>
+				<div class="image main"><img src="images/supermarket.jpg
+					" alt=""/></div>
+
+
+				<p>Instacart is an American company founded in 2012 that operates a grocery delivery and pick-up service in the United States and Canada.
+				</p>
+				<p>The company offers its services via a website and mobile app. The service allows customers to order groceries from participating retailers with the shopping being done by a personal shopper. Orders are fulfilled and delivered by a personal shopper, who picks, packs, and delivers the order.
+				</p>
+				<p>Instamarket orders are available in <a
+					href='https://www.kaggle.com/psparks/instacart-market-basket-analysis'>Kaggle</a> and contain information about which items were present in each order, as well as the market layout: In which aisle the item was found and what department contains each aisle.
+
+				</p>
+
+				<p> With this data, it is possible to analyze the relations between the orders to make business strategies regarding the layout of the hypermarket:
+
+				</p>
+
+				<ul class="alt">
+					<li>Which aisles should be grouped together in the same department?</li>
+					<li>Which departments should be close to one another?</li>
+					<li>For items that had no aisle assignment, to which aisle should they be sent?</li>
+					<li>Which items should be displayed near the cashier counters?</li>
+				</ul>
+				
+				<p> These questions are explored using hierarchical clustering algorithms, available in the links below:</p>
+
+				<header id="header" style='height:8rem;padding-bottom: 2rem'>
+					<a href="https://brandevin.github.io/instamarket_project/part1_market_layout_no_code.html" class="logo" target=_blank style='color:black;border-color:black'>PROJECT ANALYSIS - PART 1</a>
+				</header>
+				
+				<header id="header" style='height:8rem;padding-bottom: 2rem'>
+					<a href="https://brandevin.github.io/instamarket_project/part1_market_layout.html" class="logo" target=_blank style='color:black;border-color:black'>PROJECT ANALYSIS - PART 1 (WITH CODE)</a>
+				</header>
+
+
+				<p> Next, using data on the orders made by each customers, it is possible to group customers together so a strategy could be made regarding how to tailor promotions and strategies to each subgroups. By using agglomerative clustering algorithms, the following questions are explored:</p>
+
+				<ul class="alt">
+					<li>Which customers should be grouped together.</li>
+					<li>What are the characteristics these customers have in common and what strategies should be used to best deal with their needs.</li>
+				</ul>
+				<p> These questions are explored in the links below:</p>
+				<header id="header" style='height:8rem;padding-bottom: 2rem'>
+					<a href="https://brandevin.github.io/instamarket_project/part2_customer_segmentation_no_code.html" class="logo" target=_blank style='color:black;border-color:black'>PROJECT ANALYSIS - PART 2</a>
+				</header>
+				
+				<header id="header" style='height:8rem;padding-bottom: 2rem'>
+					<a href="https://brandevin.github.io/instamarket_project/part2_customer_segmentation.html" class="logo" target=_blank style='color:black;border-color:black'>PROJECT ANALYSIS - PART 2 (WITH CODE)</a>
+				</header>
+
+			</section>
+		</div>
+
+		<div id="copyright">
+			<ul>
+				<li>Felipe Suzuki</li>
+				<li>felipe.courasuzuki@gmail.com.br</li>
+			</ul>
+		</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="https://kit.fontawesome.com/2a27917fb6.js" crossorigin="anonymous"></script>
+	<script
+		type='text/javascript'>                    var divElement = document.getElementById('viz1635989150289'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.minWidth = '1020px'; vizElement.style.maxWidth = '1420px'; vizElement.style.width = '100%'; vizElement.style.height = '2230px'; } else if (divElement.offsetWidth > 500) { vizElement.style.minWidth = '1020px'; vizElement.style.maxWidth = '1420px'; vizElement.style.width = '100%'; vizElement.style.height = '2230px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '2700px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
+		<script>
+
+			</script>
+</body>
+
+</html>
