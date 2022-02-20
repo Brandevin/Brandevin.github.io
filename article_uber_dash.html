@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<style>
+.click-zoom input[type=checkbox] {
+  display: none
+}
+
+.click-zoom img {
+  margin: 0px;
+  transition: transform 0.25s ease;
+  cursor: zoom-in
+}
+
+.click-zoom input[type=checkbox]:checked~img {
+  transform: scale(1.8);
+  cursor: zoom-out
+}
+  </style>
+
+<html>
+
+<head>
+	<title>Uber Trips Dashboard</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<a href="https://Brandevin.github.io/index.html" class="logo">&larr; Back to Main Page</a>
+		</header>
+		<!-- Nav -->
+		<nav id="nav">
+			<!--
+						<ul class="links">
+							<li><a href="index.html">&larr; Back to Main Page</a></li>
+							<li class="active"><a href="#">Project Page</a></li>
+						</ul>
+						-->
+			<ul class="icons">
+				<li><a href="https://www.linkedin.com/in/felipe-suzuki/" target='_blank'
+						class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+				<li><a href="https://github.com/Brandevin" target='_blank' class="icon brands fa-github"><span
+							class="label">GitHub</span></a></li>
+
+			</ul>
+		</nav>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Post -->
+			<section class="post">
+				<header class="major">
+					<span class="date">November 03, 2021</span>
+					<h1>Visualizing Uber Rides on NY using Python's Dash
+					</h1>
+				</header>
+				<img src="uber_dash_project/main_image.PNG
+				" alt=""   style='max-width:100%;text-align: center'/>
+
+				<p>In this project, a dashboard to visualize Uber rides in New York was created. The data was obtained from <a href="https://www.kaggle.com/yasserh/uber-fares-dataset">Kaggle</a> and contains information about pickup and dropoff location, datetime of the ride and number of passengers. It contains 200.000 rides that happened in New York between january 2009 and june 2015. A subset of the data is shown in Table 1.</p>
+				<div class="image main">
+					<img src="uber_dash_project/input_dataset.PNG
+									" alt=""  style='width:auto;text-align: center;margin-left: auto;margin-right: auto'/>
+					<p style="text-align: center;"><i>Table 1. Kaggle original dataset</i></p>
+				</div>
+				<p>To study and group the data, New York was divided into more than 2000 quadrants, each with 0.005 degrees of longitude and 0.005 degrees of latitude, as shown in Table 2. Each pickup and dropoff location was assigned to a specific location, as shown in Table 3.</p>
+
+				<div class="image main">
+					<img src="uber_dash_project/quad_dataset.PNG
+									" alt="" style='width:auto;text-align: center;margin-left: auto;margin-right: auto'/>
+					<p style="text-align: center"><i>Table 2. Maximum latitudes and longitudes of quadrants</i></p>
+				</div>
+
+				<div class="image main">
+					<img src="uber_dash_project/processed_dataset.PNG
+									" alt=""  style='width:auto;text-align: center;margin-left: auto;margin-right: auto'/>
+					<p style="text-align: center;"><i>Table 3. Processed dataset, with information about quadrant of origin and destination</i></p>
+				</div>
+
+
+
+				<p> A dashboard with the data was created using Python's library "dash" and published to Heroku. It allows the user to explore the following questions:
+				</p>
+
+				<ul class="alt">
+					<li>What are the most common destination of people that get an Uber in a quadrant? What is the most common origin of people that arrive at the quadrant?</li>
+					<li>How do the pickups and dropoffs at a quadrant behave along the day? Are they constant during the day or more common during morning/afternoon?</li>
+					<li>How has the number of rides changed over the years?</li>
+					<li>Inside the quadrant, what are the most common streets that people get an Uber?</li>
+
+				</ul>
+
+
+				The dashboard is available in the website below:
+
+				<header id="header" style='height:8rem;padding-bottom: 2rem'>
+					<a href="https://uber-dash-felipe.herokuapp.com/"
+						class="logo" target=_blank style='color:black;border-color:black'>
+						HEROKU DASH APP</a>
+				</header>
+
+				<ul class="icons" style='text-align:center'>
+					<li><a href="href=https://github.com/Brandevin/Bechdel_Project"  class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+					<li><a href="https://github.com/Brandevin/Uber_Dash" style='border: 0;' class='hover-item' target="_blank"><b>Project Repository</b></a></h2></li>
+				</ul>
+
+			</section>
+		</div>
+
+		<div id="copyright">
+			<ul>
+				<li>Felipe Suzuki</li>
+				<li>felipe.courasuzuki@gmail.com.br</li>
+			</ul>
+		</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="https://kit.fontawesome.com/2a27917fb6.js" crossorigin="anonymous"></script>
+	<script
+		type='text/javascript'>                    var divElement = document.getElementById('viz1635989150289'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.minWidth = '1020px'; vizElement.style.maxWidth = '1420px'; vizElement.style.width = '100%'; vizElement.style.height = '2230px'; } else if (divElement.offsetWidth > 500) { vizElement.style.minWidth = '1020px'; vizElement.style.maxWidth = '1420px'; vizElement.style.width = '100%'; vizElement.style.height = '2230px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '2700px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
+		<script>
+
+			</script>
+</body>
+
+</html>
